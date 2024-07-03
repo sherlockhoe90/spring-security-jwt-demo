@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: Security
+  datasource:
+    url: jdbc:mysql://localhost:3306/jwtsecurity
+    username: root
+    password: root
+    driver-class-name:
+      com:
+        mysql:
+          cj:
+            jdbc:
+              Driver:com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQLDialect
